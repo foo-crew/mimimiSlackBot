@@ -2,11 +2,32 @@
     "botman/botman": {
         "version": "2.1.9"
     },
+    "botman/driver-slack": {
+        "version": "2.1.0"
+    },
+    "container-interop/container-interop": {
+        "version": "1.2.0"
+    },
     "evenement/evenement": {
         "version": "v3.0.1"
     },
+    "guzzlehttp/guzzle": {
+        "version": "6.3.0"
+    },
+    "guzzlehttp/promises": {
+        "version": "v1.3.1"
+    },
+    "guzzlehttp/psr7": {
+        "version": "1.4.2"
+    },
+    "mpociot/phpws": {
+        "version": "2.0"
+    },
     "mpociot/pipeline": {
         "version": "1.0.2"
+    },
+    "mpociot/slack-client": {
+        "version": "1.0"
     },
     "opis/closure": {
         "version": "2.4.1"
@@ -16,6 +37,9 @@
     },
     "psr/container": {
         "version": "1.0.0"
+    },
+    "psr/http-message": {
+        "version": "1.0.1"
     },
     "psr/log": {
         "version": "1.0.2"
@@ -124,5 +148,29 @@
     },
     "tightenco/collect": {
         "version": "v5.5.32"
+    },
+    "zendframework/zend-escaper": {
+        "version": "2.5.2"
+    },
+    "zendframework/zend-http": {
+        "version": "2.7.0"
+    },
+    "zendframework/zend-loader": {
+        "version": "2.5.1"
+    },
+    "zendframework/zend-log": {
+        "version": "2.9.2"
+    },
+    "zendframework/zend-servicemanager": {
+        "version": "3.3.2"
+    },
+    "zendframework/zend-stdlib": {
+        "version": "3.1.0"
+    },
+    "zendframework/zend-uri": {
+        "version": "2.5.2"
+    },
+    "zendframework/zend-validator": {
+        "version": "2.10.2"
     }
 }
