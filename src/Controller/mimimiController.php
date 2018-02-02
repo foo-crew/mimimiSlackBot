@@ -9,13 +9,13 @@ use Symfony\Component\Routing\Annotation\Route;
     /**
      * Controller used to manage blog contents in the public part of the site.
      *
-     * @Route("/blog")
+     * @Route("/foo")
      *
      */
 class mimimiController extends AbstractController
 {
     /**
-     * @Route("/", defaults={"page": "1", "_format"="html"}, name="blog_index")
+     * @Route("/")
      * @Method("GET")
      *
      * NOTE: For standard formats, Symfony will also automatically choose the best
@@ -25,5 +25,6 @@ class mimimiController extends AbstractController
     public function index(): Response
     {
         echo "mimimi";
+        die;
     }
 }

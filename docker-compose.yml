@@ -1,18 +1,26 @@
 version: '3'
 
 services:
-
-  php-fpm-nginx:
-    image: richarvey/nginx-php-fpm:latest
+  nginx:
+    build: ./docker/nginx
+    depends_on:
+      - fpm
     ports:
-      - 8080:80
+      - 80:80
       - 443:443
-      - 9000:9000
     volumes:
-      - .:/var/www/html/
-      - ./var/nginx:/var/log/nginx
+      - .:/app
+      - ./var/logs/nginx:/var/log/nginx
+
+  fpm:
+    build: ./docker/fpm
     environment:
-      - WEBROOT=/var/www/html/public
-      - ENABLE_XDEBUG=1
-      - XDEBUG_CONFIG=remote_host=10.64.0.66
-      - PHP_IDE_CONFIG=serverName=XdebugPhpStormServerConfig
+      - PHP_IDE_CONFIG=serverName=mimimi-slack-bot
+      - COMPOSER_ALLOW_SUPERUSER=1
+      - IS_DOCKER=1
+    ports:
+      - "2222:22"
+    volumes:
+      - .:/app
+      - ~/.ssh/id_rsa:/root/.ssh/id_rsa
+      - /etc/ssl:/etc/ssl
