@@ -1,4 +1,16 @@
 {
+    "botman/botman": {
+        "version": "2.1.9"
+    },
+    "evenement/evenement": {
+        "version": "v3.0.1"
+    },
+    "mpociot/pipeline": {
+        "version": "1.0.2"
+    },
+    "opis/closure": {
+        "version": "2.4.1"
+    },
     "psr/cache": {
         "version": "1.0.1"
     },
@@ -9,6 +21,30 @@
         "version": "1.0.2"
     },
     "psr/simple-cache": {
+        "version": "1.0.0"
+    },
+    "react/cache": {
+        "version": "v0.4.2"
+    },
+    "react/dns": {
+        "version": "v0.4.12"
+    },
+    "react/event-loop": {
+        "version": "v0.4.3"
+    },
+    "react/promise": {
+        "version": "v2.5.1"
+    },
+    "react/promise-timer": {
+        "version": "v1.2.1"
+    },
+    "react/socket": {
+        "version": "v0.8.9"
+    },
+    "react/stream": {
+        "version": "v0.7.7"
+    },
+    "spatie/macroable": {
         "version": "1.0.0"
     },
     "symfony/cache": {
@@ -85,5 +121,8 @@
     },
     "symfony/yaml": {
         "version": "v4.0.4"
+    },
+    "tightenco/collect": {
+        "version": "v5.5.32"
     }
 }
