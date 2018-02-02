@@ -1,7 +1,7 @@
 version: '3'
 services:
   php-fpm:
-    build: ./build/php/
+    build: mimimiSlackBot/build/php/
     ports:
      - 80:80
      - 443:443
