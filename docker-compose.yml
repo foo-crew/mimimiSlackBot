@@ -16,10 +16,8 @@ services:
     build: ./docker/fpm
     environment:
       - PHP_IDE_CONFIG=serverName=mimimi-slack-bot
-      - COMPOSER_ALLOW_SUPERUSER=1
-      - IS_DOCKER=1
     ports:
-      - "2222:22"
+      - 9000:9000
     volumes:
       - .:/app
       - ~/.ssh/id_rsa:/root/.ssh/id_rsa

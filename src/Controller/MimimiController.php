@@ -6,17 +6,18 @@ use BotMan\BotMan\BotMan;
 use BotMan\BotMan\BotManFactory;
 use BotMan\BotMan\Drivers\DriverManager;
 use BotMan\Drivers\Slack\SlackDriver;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-    /**
-     * Controller used to manage blog contents in the public part of the site.
-     *
-     * @Route("/foo")
-     *
-     */
-class mimimiController extends AbstractController
+/**
+ * Controller used to manage blog contents in the public part of the site.
+ *
+ * @Route("/")
+ *
+ */
+class MimimiController extends AbstractController
 {
     /**
      * @Route("/")
@@ -28,16 +29,12 @@ class mimimiController extends AbstractController
      */
     public function index()
     {
-<<<<<<< HEAD
-        echo "mimimi";
-        die;
-=======
         $config = [
             'slack' => [
                 'token' => 'YOUR-SLACK-BOT-TOKEN'
             ]
         ];
-        
+
         DriverManager::loadDriver(SlackDriver::class);
 
         $botman = BotManFactory::create($config);
@@ -47,6 +44,7 @@ class mimimiController extends AbstractController
         });
 
         $botman->listen();
->>>>>>> 7d46f1c0a26d3bb75c9134483558ba11aa883ee8
+
+        return new Response('foo');
     }
 }

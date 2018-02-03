@@ -8,6 +8,30 @@
     "container-interop/container-interop": {
         "version": "1.2.0"
     },
+    "doctrine/annotations": {
+        "version": "1.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "1.0",
+            "ref": "cb4152ebcadbe620ea2261da1a1c5a9b8cea7672"
+        }
+    },
+    "doctrine/cache": {
+        "version": "v1.7.1"
+    },
+    "doctrine/collections": {
+        "version": "v1.5.0"
+    },
+    "doctrine/common": {
+        "version": "v2.8.1"
+    },
+    "doctrine/inflector": {
+        "version": "v1.3.0"
+    },
+    "doctrine/lexer": {
+        "version": "v1.0.1"
+    },
     "evenement/evenement": {
         "version": "v3.0.1"
     },
@@ -67,6 +91,15 @@
     },
     "react/stream": {
         "version": "v0.7.7"
+    },
+    "sensio/framework-extra-bundle": {
+        "version": "4.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "4.0",
+            "ref": "aaddfdf43cdecd4cf91f992052d76c2cadc04543"
+        }
     },
     "spatie/macroable": {
         "version": "1.0.0"
