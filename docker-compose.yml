@@ -1,10 +1,11 @@
 version: '3'
 
 services:
-  nginx:
+  mimimi-slack-bot-nginx:
+    container_name: mimimi-slack-bot-nginx
     build: ./docker/nginx
     depends_on:
-      - fpm
+      - mimimi-slack-bot-php-fpm
     ports:
       - 80:80
       - 443:443
@@ -12,13 +13,34 @@ services:
       - .:/app
       - ./var/logs/nginx:/var/log/nginx
 
-  fpm:
+  mimimi-slack-bot-php-fpm:
+    container_name: mimimi-slack-bot-php-fpm
     build: ./docker/fpm
     environment:
-      - PHP_IDE_CONFIG=serverName=mimimi-slack-bot
+      ENVIRONMENT: dev
+      GRAPHITE_HOST: mimimi-slack-bot-graphite
+      GRAPHITE_PORT: 8125
     ports:
       - 9000:9000
     volumes:
       - .:/app
-      - ~/.ssh/id_rsa:/root/.ssh/id_rsa
-      - /etc/ssl:/etc/ssl
+      #- ~/.ssh/id_rsa:/root/.ssh/id_rsa
+      #- /etc/ssl:/etc/ssl
+
+  mimimi-slack-bot-graphite:
+    container_name: mimimi-slack-bot-graphite
+    image: graphiteapp/graphite-statsd
+    ports:
+    - 8082:80
+    - 2003-2004:2003-2004
+    - 2023-2024:2023-2024
+    - 8125:8125/udp
+    - 8126:8126
+
+  mimimi-slack-bot-grafana:
+    container_name: mimimi-slack-bot-grafana
+    image: grafana/grafana
+    ports:
+    - 3000:3000
+    volumes:
+    - ./data/grafana:/var/lib/grafana
