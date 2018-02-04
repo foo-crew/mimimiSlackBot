@@ -1,16 +1,4 @@
 {
-    "botman/botman": {
-        "version": "2.1.9"
-    },
-    "botman/driver-slack": {
-        "version": "2.1.0"
-    },
-    "container-interop/container-interop": {
-        "version": "1.2.0"
-    },
-    "evenement/evenement": {
-        "version": "v3.0.1"
-    },
     "guzzlehttp/guzzle": {
         "version": "6.3.0"
     },
@@ -19,18 +7,6 @@
     },
     "guzzlehttp/psr7": {
         "version": "1.4.2"
-    },
-    "mpociot/phpws": {
-        "version": "2.0"
-    },
-    "mpociot/pipeline": {
-        "version": "1.0.2"
-    },
-    "mpociot/slack-client": {
-        "version": "1.0"
-    },
-    "opis/closure": {
-        "version": "2.4.1"
     },
     "psr/cache": {
         "version": "1.0.1"
@@ -45,30 +21,6 @@
         "version": "1.0.2"
     },
     "psr/simple-cache": {
-        "version": "1.0.0"
-    },
-    "react/cache": {
-        "version": "v0.4.2"
-    },
-    "react/dns": {
-        "version": "v0.4.12"
-    },
-    "react/event-loop": {
-        "version": "v0.4.3"
-    },
-    "react/promise": {
-        "version": "v2.5.1"
-    },
-    "react/promise-timer": {
-        "version": "v1.2.1"
-    },
-    "react/socket": {
-        "version": "v0.8.9"
-    },
-    "react/stream": {
-        "version": "v0.7.7"
-    },
-    "spatie/macroable": {
         "version": "1.0.0"
     },
     "symfony/cache": {
@@ -145,32 +97,5 @@
     },
     "symfony/yaml": {
         "version": "v4.0.4"
-    },
-    "tightenco/collect": {
-        "version": "v5.5.32"
-    },
-    "zendframework/zend-escaper": {
-        "version": "2.5.2"
-    },
-    "zendframework/zend-http": {
-        "version": "2.7.0"
-    },
-    "zendframework/zend-loader": {
-        "version": "2.5.1"
-    },
-    "zendframework/zend-log": {
-        "version": "2.9.2"
-    },
-    "zendframework/zend-servicemanager": {
-        "version": "3.3.2"
-    },
-    "zendframework/zend-stdlib": {
-        "version": "3.1.0"
-    },
-    "zendframework/zend-uri": {
-        "version": "2.5.2"
-    },
-    "zendframework/zend-validator": {
-        "version": "2.10.2"
     }
 }
